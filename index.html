@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>D&Dice | 20-Sided Dice Roller</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <audio id='dice-audio' src="sounds/dice.mp3"></audio>
+  <audio id='dice-audio2' src="sounds/dice2.mp3"></audio>
+
+  <section class="section-top">
+    <div class="container">
+      <h1 id="title">D&Dice</h1>
+
+      <div class="dropdown">
+        <button class="dropbtn">Choose a Dice Color</button>
+        <div class="dropdown-content">
+          <a href="#" onClick="diceColor('red')" style="font-weight: bold; background-color: #ed1c24;">Red</a>
+          <a href="#" onClick="diceColor('blue')" style="font-weight: bold; background-color:#00a2e8;">Blue</a>
+          <a href="#" onClick="diceColor('green')" style="font-weight: bold; background-color:#22b14c;">Green</a>
+          <a href="#" onClick="diceColor('yellow')" style="font-weight: bold; background-color:#fff200;">Yellow</a>
+          <a href="#" onClick="diceColor('pink')" style="font-weight: bold; background-color:#ffaec9;">Pink</a>
+          <a href="#" onClick="diceColor('purple')" style="font-weight: bold; background-color:#a349a4;">Purple</a>
+        </div>
+      </div>
+      <button id="roll-button">Click to Roll</button>
+    </div>
+  </section>
+
+  <section class="section-dice">
+    <div class="wrapper">
+      <div class="dice-container">
+        <img class="dice" src="images/d20red.png" alt="">
+        <h1 class="dice-number"> ?</h1>
+      </div>
+    </div>
+  </section>
+  <div class="table"></div>
+
+  <section class="footer">
+
+    &copy; <script>
+      document.write(new Date().getFullYear())
+    </script> Danny Stalter
+
+  </section>
+
+  <!-- add credits section -->
+  <!-- <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by denamorado - www.freepik.com</a> -->
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
